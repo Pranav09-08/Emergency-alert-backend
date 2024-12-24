@@ -1,0 +1,121 @@
+[
+  {
+    "latitude": "18.513949",
+    "longitude": "73.850223",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.520859",
+    "longitude": "73.854972",
+    "riskLevel": "Medium",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.516571",
+    "longitude": "73.858787",
+    "riskLevel": "Medium",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.522770",
+    "longitude": "73.850486",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.520960",
+    "longitude": "73.857370",
+    "riskLevel": "Medium",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.522459",
+    "longitude": "73.852710",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.510442",
+    "longitude": "73.855752",
+    "riskLevel": "Medium",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.511822",
+    "longitude": "73.851099",
+    "riskLevel": "Medium",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.518411",
+    "longitude": "73.853938",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.511921",
+    "longitude": "73.848290",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.525108",
+    "longitude": "73.847288",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.512038",
+    "longitude": "73.846969",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.526432",
+    "longitude": "73.857893",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.527244",
+    "longitude": "73.861275",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.518876",
+    "longitude": "73.848594",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.517735",
+    "longitude": "73.847577",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  },
+  {
+    "latitude": "18.510842",
+    "longitude": "73.853740",
+    "riskLevel": "High",
+    "description": "High risk zone",
+    "timestamp": "2024-12-24T03:20:01.766Z"
+  }
+]
