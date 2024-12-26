@@ -1,14 +1,14 @@
 [
   {
-    "latitude": "18.513949",
-    "longitude": "73.850223",
+    "latitude": "18.4647523",
+    "longitude": "73.8514515",
     "riskLevel": "High",
     "description": "High risk zone",
     "timestamp": "2024-12-24T03:20:01.766Z"
   },
   {
-    "latitude": "18.520859",
-    "longitude": "73.854972",
+    "latitude": "18.455518975872746",
+    "longitude": "73.84729582850838",
     "riskLevel": "Medium",
     "description": "High risk zone",
     "timestamp": "2024-12-24T03:20:01.766Z"
