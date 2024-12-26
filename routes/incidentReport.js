@@ -25,4 +25,18 @@ router.post('/', async (req, res) => {
     }
 });
 
+// GET route for fetching all incident reports
+router.get('/', async (req, res) => {
+    try {
+        // Fetch all incident reports from the database
+        const reports = await IncidentReport.find();
+
+        // Send the reports as a response
+        res.status(200).json(reports);
+    } catch (error) {
+        console.error('Error fetching reports:', error);
+        res.status(500).json({ error: 'Failed to fetch incident reports' });
+    }
+});
+
 module.exports = router;
