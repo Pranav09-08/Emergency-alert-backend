@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/darkPathAlert', {
+        await mongoose.connect('mongodb://localhost:27017/emergency_alert', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });

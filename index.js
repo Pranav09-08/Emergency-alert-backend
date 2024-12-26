@@ -3,13 +3,16 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const connectDB = require('./config/db'); // Import the connectDB function
+const incidentReportRouter = require('./routes/incidentReport');
 
 // Initialize app
 const app = express();
-
+connectDB();
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/api/incident-reports', incidentReportRouter);
 
 // Route to fetch high-risk areas from the JSON file
 app.get('/api/high-risk-areas', (req, res) => {
