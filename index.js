@@ -8,11 +8,14 @@ const incidentReportRouter = require('./routes/incidentReport');
 
 // Initialize app
 const app = express();
-connectDB();
+connectDB();  // Connect to MongoDB
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/api/incident-reports', incidentReportRouter);
+
+// Routes
+app.use('/api/incident-reports', incidentReportRouter);  // Incident report route
 
 // Route to fetch high-risk areas from the JSON file
 app.get('/api/high-risk-areas', (req, res) => {

@@ -1,34 +1,37 @@
 const express = require('express');
+const IncidentReport = require('../models/IncidentReport'); // Import the IncidentReport model
 const router = express.Router();
-const IncidentReport = require('../models/IncidentReport');
 
-// Route to submit a new incident report
-router.post('/', async (req, res) => {
-    const { description, category, mediaUrl, latitude, longitude } = req.body;
+// Route to create a new incident report
+router.post('/incident-reports', async (req, res) => {
+  const { description, category, media_url, timestamp, status, location } = req.body;
 
+  // Validate required fields
+  if (!description || !category || !location) {
+    return res.status(400).json({ message: 'Please provide all required fields' });
+  }
+
+  try {
+    // Create a new incident report
     const newReport = new IncidentReport({
-        description,
-        category,
-        mediaUrl,
-        location: { latitude, longitude },
+      description,
+      category,
+      media_url,
+      timestamp,
+      status,
+      location,
     });
 
-    try {
-        await newReport.save();
-        res.status(201).json(newReport);
-    } catch (err) {
-        res.status(400).json({ message: err.message });
-    }
+    // Save the report to MongoDB
+    await newReport.save();
+
+    // Send a success response
+    res.status(201).json({ message: 'Incident reported successfully', report: newReport });
+  } catch (error) {
+    console.error('Error saving incident report:', error);
+    res.status(500).json({ message: 'Failed to report incident', error: error.message });
+  }
 });
 
-// Route to get all incident reports
-router.get('/', async (req, res) => {
-    try {
-        const reports = await IncidentReport.find();
-        res.json(reports);
-    } catch (err) {
-        res.status(500).json({ message: err.message });
-    }
-});
-
+// Export the router
 module.exports = router;
