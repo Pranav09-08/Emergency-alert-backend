@@ -12,7 +12,7 @@ connectDB();  // Connect to MongoDB
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.json());  // You can also use app.use(express.json()) if you're using a newer version of Express
 
 // Routes
 app.use('/api/incident-reports', incidentReportRouter);  // Incident report route
